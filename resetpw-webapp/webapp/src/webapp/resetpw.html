@@ -1,0 +1,45 @@
+<style type="text/css" media="all">
+</style>
+
+<!-- just one mode, and some alerts -->
+<div class="e3_tool_header">
+	<div class="e3_tool_mode_title" style="background-image:url(support/icons/user_enrolled.png)">Reset Password</div>
+</div>
+
+<div class="e3_font">Enter the email address associated with your Etudes account, then press "Send New Password".  Etudes will then send you an email with your new password - check for it in your email (including in your junk mail folder).</div>
+<div class="e3_configurationFeature_body">
+	<div class="e3_configure_set">
+		<div class="e3_configure_set_row">
+			<div class="e3_configure_set_entry_header">email:</div>
+			<div class="e3_configure_set_entry_field"><input id="resetpw_email" type="text" size="32" /></div>
+		</div>
+		<div class="e3_configure_set_row">
+			<div class="e3_configure_set_entry_header"></div>
+			<div class="e3_configure_set_entry_field"><input type="button" value="Send New Password" id="resetpw_send" /></div>
+		</div>
+	</div>
+</div>
+
+<!-- alert for password reset email sent -->
+<div id="resetpw_alertReset" title="Password Reset">
+	<div class="e3_info">
+		Your password has been reset.  An email with your new password has been sent to:
+		<p style="margin-left:5em;"><span id="resetpw_email_sent" /></p>
+	</div>
+</div>
+
+<!-- alert for non-usable email address -->
+<div id="resetpw_alertNotResetNotFound" title="Password NOT Reset">
+	<div class="e3_alert">
+		Password NOT reset.  The email address was not recognized.
+	</div>
+	<p><a href="http://etudes.org/help/update-account" target="_blank">Click here for help.</a></p>
+</div>
+
+<!-- alert for non-unique email address -->
+<div id="resetpw_alertNotResetTooMany" title="Password NOT Reset">
+	<div class="e3_alert">
+		Password NOT reset.  The email address is being used by more than one Etudes account.
+	</div>
+	<p><a href="http://etudes.org/help/update-account" target="_blank">Click here for help.</a></p>
+</div>

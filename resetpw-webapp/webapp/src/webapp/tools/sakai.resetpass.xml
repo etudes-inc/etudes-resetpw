@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<registration>
+
+	<tool
+			id="sakai.resetpass"
+			title="Reset Password"
+			description="For reseting passwords."
+			dispatcher="E3"
+			e3Code="resetpw">
+
+	</tool>
+
+</registration>
